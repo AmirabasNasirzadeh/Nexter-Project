@@ -18,6 +18,12 @@ font-primary: 'Nunito', sans-serif;
 font-display: 'Josefin Sans', sans-serif;
 */
 
+
+
+/**********************/
+/* General */
+/**********************/
+
 * {
   padding: 0;
   margin: 0;
@@ -33,4 +39,99 @@ body {
   font-family: "Nunito", sans-serif;
   color: #6D5D4B;
   font-weight: 300;
+}
+
+
+
+/**********************/
+/* General */
+/**********************/
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vh repeat(3, min-content);
+}
+
+
+
+/**********************/
+/* Sidebar */
+/**********************/
+
+.sidebar {
+  background-color: #6D5D4B;
+}
+
+
+
+/**********************/
+/* Header */
+/**********************/
+
+.header {
+  background-color: #54483A;
+}
+
+
+
+/**********************/
+/* Realtours */
+/**********************/
+
+.realtours {
+  background-color: #101d2c;
+}
+
+
+
+/**********************/
+/* Features */
+/**********************/
+
+.features {
+  background-color: #aaa;
+}
+
+
+
+/**********************/
+/* Story */
+/**********************/
+
+.story-picture {
+  background-color: #6D5D4B;
+}
+
+.story-content {
+  background-color: #54483A;
+}
+
+
+
+/**********************/
+/* Homes */
+/**********************/
+
+.homes {
+  background-color: #101d2c;
+}
+
+
+
+/**********************/
+/* Gallery */
+/**********************/
+
+.gallery {
+  background-color: #54483A;
+}
+
+
+
+/**********************/
+/* Footer */
+/**********************/
+
+.footer {
+  background-color: #101d2c;
 }
