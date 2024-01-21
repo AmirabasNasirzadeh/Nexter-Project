@@ -37,7 +37,7 @@ html {
 body {
   line-height: 1;
   font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
+  color: #c69963;
   font-weight: 300;
 }
 
@@ -50,6 +50,13 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vh repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(min-content, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(min-content, 1fr) [full-end];
+}
+
+.container>* {
+  color: #fff;
+  padding: 2rem;
+  font-size: 2rem;
 }
 
 
@@ -59,7 +66,9 @@ body {
 /**********************/
 
 .sidebar {
-  background-color: #6D5D4B;
+  background-color: #c69963;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
 }
 
 
@@ -70,6 +79,7 @@ body {
 
 .header {
   background-color: #54483A;
+  grid-column: full-start / col-start 7;
 }
 
 
@@ -80,6 +90,7 @@ body {
 
 .realtours {
   background-color: #101d2c;
+  grid-column: col-start 7 / full-end;
 }
 
 
@@ -90,6 +101,7 @@ body {
 
 .features {
   background-color: #aaa;
+  grid-column: col-start 1 / col-end 8;
 }
 
 
@@ -99,11 +111,13 @@ body {
 /**********************/
 
 .story-picture {
-  background-color: #6D5D4B;
+  background-color: #c69963;
+  grid-column: full-start / col-start 5;
 }
 
 .story-content {
-  background-color: #54483A;
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / col-end 8;
 }
 
 
@@ -114,6 +128,7 @@ body {
 
 .homes {
   background-color: #101d2c;
+  grid-column: col-start 1 / col-end 8;
 }
 
 
@@ -124,6 +139,7 @@ body {
 
 .gallery {
   background-color: #54483A;
+  grid-column: full-start / full-end;
 }
 
 
@@ -134,4 +150,5 @@ body {
 
 .footer {
   background-color: #101d2c;
+  grid-column: full-start / full-end;
 }
