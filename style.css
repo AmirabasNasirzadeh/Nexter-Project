@@ -41,10 +41,32 @@ body {
   font-weight: 300;
 }
 
+.header-1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.header-2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.header-3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.header-4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+
+  font-size: 1.9rem;
+}
+
 
 
 /**********************/
-/* General */
+/* Container */
 /**********************/
 
 .container {
@@ -100,9 +122,41 @@ body {
 /**********************/
 
 .features {
-  background-color: #aaa;
   grid-column: col-start 1 / col-end 8;
+
+  margin: 10rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
 }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
+  align-self: start;
+}
+
+.feature-icon {
+  color: #c69963;
+  height: 4.5rem;
+  width: 4.5rem;
+  grid-row: 1 / span 2;
+  transform: translateY(-1.5rem);
+}
+
+.feature-header {
+  color: #333;
+}
+
+.feature-text {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+
 
 
 
@@ -117,7 +171,7 @@ body {
 
 .story-content {
   background-color: #f9f7f6;
-  grid-column: col-start 5 / col-end 8;
+  grid-column: col-start 5 / full-end;
 }
 
 
