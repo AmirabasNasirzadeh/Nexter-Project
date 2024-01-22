@@ -49,11 +49,18 @@ body {
 .header-2 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
+
+  font-size: 4rem;
+  font-style: italic;
 }
 
 .header-3 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
+
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #c69963;
 }
 
 .header-4 {
@@ -61,6 +68,48 @@ body {
   font-weight: 400;
 
   font-size: 1.9rem;
+}
+
+.btn {
+  background-color: #c69963;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #B28451;
+}
+
+.color-dark {
+  color: #333;
+}
+
+.color-primary {
+  color: #c69963;
+}
+
+.mg-sm {
+  margin-bottom: 2rem;
+}
+
+.mg-md {
+  margin-bottom: 3rem;
+}
+
+.mg-lg {
+  margin-bottom: 4rem;
+}
+
+.mg-hg {
+  margin-bottom: 8rem;
 }
 
 
@@ -71,7 +120,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vh repeat(3, min-content);
+  grid-template-rows: 80vh min-content 80vh repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(min-content, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(min-content, 1fr) [full-end];
 }
 
@@ -159,19 +208,50 @@ body {
 
 
 
-
 /**********************/
 /* Story */
 /**********************/
 
 .story-picture {
-  background-color: #c69963;
+  background-image: linear-gradient(to right, #c6996380, #c6996380), url(img/back.jpg);
   grid-column: full-start / col-start 5;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.img-1 {
+  width: 100%;
+  grid-column: 2 / 6;
+  grid-row: 2 / 6;
+  box-shadow: 0 2rem 4rem #00000040;
+}
+
+.img-2 {
+  width: 120%;
+  grid-column: 4 /7;
+  grid-row: 4 / 7;
+  z-index: 20000;
+  box-shadow: 0 2rem 6rem #00000030;
 }
 
 .story-content {
   background-color: #f9f7f6;
   grid-column: col-start 5 / full-end;
+
+  padding: 6rem 8vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.story-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-style: italic;
 }
 
 
