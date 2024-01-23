@@ -173,7 +173,7 @@ body {
 .features {
   grid-column: col-start 1 / col-end 8;
 
-  margin: 10rem 0;
+  margin: 12rem 0;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -261,8 +261,66 @@ body {
 /**********************/
 
 .homes {
-  background-color: #101d2c;
   grid-column: col-start 1 / col-end 8;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 7rem;
+
+  padding: 15rem 0;
+  margin: 0 3.5rem;
+}
+
+.home {
+  background-color: #f9f7f6;
+}
+
+.home-img {
+  width: 100%;
+  margin-bottom: 3rem;
+  z-index: 1;
+}
+
+.home-name {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: #101d2c;
+  color: #fff;
+  display: block;
+  width: 85%;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  margin: -6rem auto 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.home-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3.5rem;
+  padding: 3.5rem;
+}
+
+.home-text-feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-text-feature-icon {
+  height: 2rem;
+  width: 2rem;
+  color: #c69963;
+}
+
+.home-text-feature-text {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.btn-home {
+  width: 100%;
 }
 
 
