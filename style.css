@@ -330,8 +330,90 @@ body {
 /**********************/
 
 .gallery {
-  background-color: #54483A;
+  background-color: #f9f7f6;
   grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  gap: 2rem;
+}
+
+.gallery-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gic-1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.gic-2 {
+  grid-column: 3 / 6;
+  grid-row: 1 / 4;
+}
+
+.gic-3 {
+  grid-column: 6 / 7;
+  grid-row: 1 / 3;
+}
+
+.gic-4 {
+  grid-column: 7 / 9;
+  grid-row: 1 / 3;
+}
+
+.gic-5 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 6;
+}
+
+.gic-6 {
+  grid-column: 3 / 5;
+  grid-row: 4 / 6;
+}
+
+.gic-7 {
+  grid-column:  5 / 6;
+  grid-row: 4 / 5;
+}
+
+.gic-8 {
+  grid-column: 6 / 8;
+  grid-row: 3 / 5;
+}
+
+.gic-9 {
+  grid-column: 8 / 9;
+  grid-row: 3 / 6;
+}
+
+.gic-10 {
+  grid-column: 1 / 2;
+  grid-row: 6 / 8;
+}
+
+.gic-11 {
+  grid-column: 2 / 4;
+  grid-row: 6 / 8;
+}
+
+.gic-12 {
+  grid-column: 4 / 5;
+  grid-row: 6 / 8;
+}
+
+.gic-13 {
+  grid-column: 5 / 8;
+  grid-row: 5 / 8;
+}
+
+.gic-14 {
+  grid-column: 8 / 9;
+  grid-row: 6 / 8;
 }
 
 
