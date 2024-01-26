@@ -44,6 +44,10 @@ body {
 .header-1 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
+
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1;
 }
 
 .header-2 {
@@ -179,8 +183,63 @@ body {
 /**********************/
 
 .header {
-  background-color: #54483A;
   grid-column: full-start / col-start 7;
+  background-image: linear-gradient(#101d2ce6, #101d2ce6), url(img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 8rem 8rem 8rem;
+
+  display: grid;
+  grid-template-rows: 1fr minmax(min-content, 6rem) 1fr;
+}
+
+.header-icon {
+  display: block;
+  margin: 0 auto;
+  height: 3rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header-text button {
+  align-self: flex-start;
+}
+
+.seen-on {
+  font-size: 1.6rem;
+  color: #aaa;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.seen-on::before,
+.seen-on::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #aaa;
+}
+
+.companies-logos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.companies-logos {
+  height: 2.5rem;
+  filter: brightness(70%);
 }
 
 
@@ -475,13 +534,13 @@ body {
   text-transform: uppercase;
   padding: 2rem;
   display: block;
-  background-color: #ffffff0d;
   transition: all 0.2s;
 }
 
 .footer-item:hover,
 .footer-item:active {
   transform: translateY(-1rem);
+  background-color: #ffffff0d;
 }
 
 .copyright {
