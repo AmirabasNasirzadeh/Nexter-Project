@@ -233,8 +233,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3rem;
-  align-items: center;
   justify-items: center;
+  align-items: center;
 }
 
 .companies-logos {
@@ -245,13 +245,48 @@ body {
 
 
 /**********************/
-/* Realtours */
+/* Realtors */
 /**********************/
 
-.realtours {
+.realtors {
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  row-gap: 3rem;
 }
+
+.realtors-list {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 2rem;
+  row-gap: 5vh;
+  align-items: center;
+}
+
+.realtor-img {
+  height: 7rem;
+  border-radius: 99999rem;
+}
+
+.realtor-details {}
+
+.realtor-name {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: #f9f7f6;
+}
+
+.houses-sold {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
 
 
 
