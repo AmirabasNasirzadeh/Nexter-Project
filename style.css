@@ -140,6 +140,36 @@ body {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-btn {
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  border: none;
+  border-radius: 0;
+  margin-top: 2rem;
+}
+
+.sidebar-btn::before{
+  content: "";
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  transform: translateY(-1.5rem);
+  display: block;
+}
+
+.sidebar-btn::after {
+  content: "";
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  transform: translateY(1.3rem);
+  display: block;
 }
 
 
