@@ -124,7 +124,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 80vh repeat(3, min-content);
+  grid-template-rows: 80vh min-content max-content repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(min-content, 1fr) repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(min-content, 1fr) [full-end];
 }
 
@@ -238,7 +238,8 @@ body {
 }
 
 .companies-logos {
-  height: 2.5rem;
+  max-height: 2.5rem;
+  max-width: 100%;
   filter: brightness(70%);
 }
 
@@ -338,6 +339,8 @@ body {
 
 .story-picture {
   background-image: linear-gradient(to right, #c6996380, #c6996380), url(img/back.jpg);
+  background-position: center;
+  background-size: cover;
   grid-column: full-start / col-start 5;
 
   display: grid;
